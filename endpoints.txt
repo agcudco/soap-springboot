@@ -1,0 +1,160 @@
+http://localhost:8080/services/CategoriaService?wsdl
+
+http://localhost:8080/services/ProductoService?wsdl
+
+http://localhost:8080/services/ClienteService?wsdl
+
+===============================
+ClienteService (ec.edu.espe)
+WSDL:     http://localhost:8080/services/ClienteService?wsdl
+Endpoint: http://localhost:8080/services/ClienteService
+===============================
+
+-- listClientes --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:listClientes/>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- getCliente --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:getCliente>
+      <id>1</id>
+    </soap:getCliente>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- createCliente --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:createCliente>
+      <cliente>
+        <nombre>Nombre Ejemplo</nombre>
+        <email>ejemplo@espe.edu.ec</email>
+      </cliente>
+    </soap:createCliente>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- deleteCliente --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:deleteCliente>
+      <id>1</id>
+    </soap:deleteCliente>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+===============================
+CategoriaService (ec.edu.espe)
+WSDL:     http://localhost:8080/services/CategoriaService?wsdl
+Endpoint: http://localhost:8080/services/CategoriaService
+===============================
+
+-- listCategorias --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:listCategorias/>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- getCategoria --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:getCategoria>
+      <id>1</id>
+    </soap:getCategoria>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- createCategoria --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:createCategoria>
+      <categoria>
+        <nombre>Categoría Ejemplo</nombre>
+      </categoria>
+    </soap:createCategoria>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- deleteCategoria --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:deleteCategoria>
+      <id>1</id>
+    </soap:deleteCategoria>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+===============================
+ProductoService (ec.edu.espe)
+WSDL:     http://localhost:8080/services/ProductoService?wsdl
+Endpoint: http://localhost:8080/services/ProductoService
+===============================
+
+-- listProductos --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:listProductos/>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- getProducto --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:getProducto>
+      <id>1</id>
+    </soap:getProducto>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- createProducto --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:createProducto>
+      <producto>
+        <nombre>Producto Ejemplo</nombre>
+        <precio>123.45</precio>
+        <categoria>
+          <id>1</id>
+        </categoria>
+      </producto>
+    </soap:createProducto>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+-- deleteProducto --
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:soap="http://soap.espe.edu.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <soap:deleteProducto>
+      <id>1</id>
+    </soap:deleteProducto>
+  </soapenv:Body>
+</soapenv:Envelope>
